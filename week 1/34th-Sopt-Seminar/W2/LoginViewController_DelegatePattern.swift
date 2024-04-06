@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 class LoginViewController_DelegatePattern: UIViewController{
     
@@ -67,6 +68,30 @@ class LoginViewController_DelegatePattern: UIViewController{
     private func setLayout() {
         [titleLabel, idTextField, passwordTextField, loginButton].forEach {
             self.view.addSubview($0)
+            self.view.translatesAutoresizingMaskIntoConstraints = false
+        }
+        titleLabel.snp.makeConstraints {
+            //$0 = closure 안에 있는 인자값
+            $0.centerX.equalToSuperview()
+            $0.top.equalToSuperview().inset(161)
+        }
+
+        idTextField.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(70)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(58)
+        }
+        
+        passwordTextField.snp.makeConstraints {
+            $0.top.equalTo(idTextField.snp.bottom).offset(7)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(58)
+        }
+        
+        loginButton.snp.makeConstraints {
+            $0.top.equalTo(passwordTextField.snp.bottom).offset(35)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(58)
         }
     }
     
@@ -87,4 +112,8 @@ extension LoginViewController_DelegatePattern: DataBindProtocol {
     func dataBind(id: String?) {
         idTextField.text = "\(id ?? "")에서 어떤걸로 할꺼얌?"
     }
+}
+
+#Preview{
+    LoginViewController_DelegatePattern()
 }
