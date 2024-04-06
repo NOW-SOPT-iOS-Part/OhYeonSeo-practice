@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC6599CE2BC114AD005B6A93 /* WelcomeViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6599CD2BC114AD005B6A93 /* WelcomeViewController_DelegatePattern.swift */; };
+		DC6599D02BC114D2005B6A93 /* LoginViewController_DelegatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6599CF2BC114D2005B6A93 /* LoginViewController_DelegatePattern.swift */; };
+		DC6599D22BC11B62005B6A93 /* LoginViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6599D12BC11B62005B6A93 /* LoginViewController_Closure.swift */; };
+		DC6599D42BC11B6F005B6A93 /* WelcomeViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6599D32BC11B6F005B6A93 /* WelcomeViewController_Closure.swift */; };
 		DC7138F62BB7D7BD0057896A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7138F52BB7D7BD0057896A /* AppDelegate.swift */; };
 		DC7138F82BB7D7BD0057896A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7138F72BB7D7BD0057896A /* SceneDelegate.swift */; };
 		DC7138FD2BB7D7BE0057896A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DC7138FC2BB7D7BE0057896A /* Base */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC6599CD2BC114AD005B6A93 /* WelcomeViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_DelegatePattern.swift; sourceTree = "<group>"; };
+		DC6599CF2BC114D2005B6A93 /* LoginViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_DelegatePattern.swift; sourceTree = "<group>"; };
+		DC6599D12BC11B62005B6A93 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
+		DC6599D32BC11B6F005B6A93 /* WelcomeViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Closure.swift; sourceTree = "<group>"; };
 		DC7138F22BB7D7BD0057896A /* 34th-Sopt-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "34th-Sopt-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7138F52BB7D7BD0057896A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC7138F72BB7D7BD0057896A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +51,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC6599CC2BC1148E005B6A93 /* W2 */ = {
+			isa = PBXGroup;
+			children = (
+				DC6599CF2BC114D2005B6A93 /* LoginViewController_DelegatePattern.swift */,
+				DC6599CD2BC114AD005B6A93 /* WelcomeViewController_DelegatePattern.swift */,
+				DC6599D12BC11B62005B6A93 /* LoginViewController_Closure.swift */,
+				DC6599D32BC11B6F005B6A93 /* WelcomeViewController_Closure.swift */,
+			);
+			path = W2;
+			sourceTree = "<group>";
+		};
 		DC7138E92BB7D7BD0057896A = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +84,7 @@
 				DC7138F52BB7D7BD0057896A /* AppDelegate.swift */,
 				DC7138F72BB7D7BD0057896A /* SceneDelegate.swift */,
 				DC71390D2BB7E8F20057896A /* ViewController */,
+				DC6599CC2BC1148E005B6A93 /* W2 */,
 				DC940B942BBAD21C008E1B8E /* Font */,
 				DC940B972BBAD68D008E1B8E /* Extension */,
 				DC7138FB2BB7D7BE0057896A /* Main.storyboard */,
@@ -172,11 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6599D22BC11B62005B6A93 /* LoginViewController_Closure.swift in Sources */,
 				DC71390A2BB7E4AE0057896A /* LoginViewController.swift in Sources */,
 				DC71390C2BB7E8D50057896A /* WelcomeViewController.swift in Sources */,
 				DC7138F62BB7D7BD0057896A /* AppDelegate.swift in Sources */,
 				DC7138F82BB7D7BD0057896A /* SceneDelegate.swift in Sources */,
 				DC940B992BBAD6A2008E1B8E /* UIColor+.swift in Sources */,
+				DC6599D02BC114D2005B6A93 /* LoginViewController_DelegatePattern.swift in Sources */,
+				DC6599D42BC11B6F005B6A93 /* WelcomeViewController_Closure.swift in Sources */,
+				DC6599CE2BC114AD005B6A93 /* WelcomeViewController_DelegatePattern.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
