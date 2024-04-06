@@ -79,6 +79,7 @@ class LoginViewController_DelegatePattern: UIViewController{
         idTextField.snp.makeConstraints {
             $0.top.equalTo(titleLabel.snp.bottom).offset(70)
             $0.leading.trailing.equalToSuperview().inset(20)
+            //$0.trailing.equalToSuperview().offset(-20)
             $0.height.equalTo(58)
         }
         
