@@ -13,6 +13,7 @@
 		DC6599D42BC11B6F005B6A93 /* WelcomeViewController_Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6599D32BC11B6F005B6A93 /* WelcomeViewController_Closure.swift */; };
 		DC6599D72BC12786005B6A93 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DC6599D62BC12786005B6A93 /* SnapKit */; };
 		DC6599D92BC12786005B6A93 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = DC6599D82BC12786005B6A93 /* SnapKit-Dynamic */; };
+		DC6599DB2BC131C9005B6A93 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6599DA2BC131C9005B6A93 /* ScrollViewController.swift */; };
 		DC7138F62BB7D7BD0057896A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7138F52BB7D7BD0057896A /* AppDelegate.swift */; };
 		DC7138F82BB7D7BD0057896A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7138F72BB7D7BD0057896A /* SceneDelegate.swift */; };
 		DC7138FD2BB7D7BE0057896A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DC7138FC2BB7D7BE0057896A /* Base */; };
@@ -29,6 +30,7 @@
 		DC6599CF2BC114D2005B6A93 /* LoginViewController_DelegatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_DelegatePattern.swift; sourceTree = "<group>"; };
 		DC6599D12BC11B62005B6A93 /* LoginViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController_Closure.swift; sourceTree = "<group>"; };
 		DC6599D32BC11B6F005B6A93 /* WelcomeViewController_Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController_Closure.swift; sourceTree = "<group>"; };
+		DC6599DA2BC131C9005B6A93 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		DC7138F22BB7D7BD0057896A /* 34th-Sopt-Seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "34th-Sopt-Seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7138F52BB7D7BD0057896A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC7138F72BB7D7BD0057896A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				DC6599CD2BC114AD005B6A93 /* WelcomeViewController_DelegatePattern.swift */,
 				DC6599D12BC11B62005B6A93 /* LoginViewController_Closure.swift */,
 				DC6599D32BC11B6F005B6A93 /* WelcomeViewController_Closure.swift */,
+				DC6599DA2BC131C9005B6A93 /* ScrollViewController.swift */,
 			);
 			path = W2;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 				DC7138F82BB7D7BD0057896A /* SceneDelegate.swift in Sources */,
 				DC940B992BBAD6A2008E1B8E /* UIColor+.swift in Sources */,
 				DC6599D02BC114D2005B6A93 /* LoginViewController_DelegatePattern.swift in Sources */,
+				DC6599DB2BC131C9005B6A93 /* ScrollViewController.swift in Sources */,
 				DC6599D42BC11B6F005B6A93 /* WelcomeViewController_Closure.swift in Sources */,
 				DC6599CE2BC114AD005B6A93 /* WelcomeViewController_DelegatePattern.swift in Sources */,
 			);
