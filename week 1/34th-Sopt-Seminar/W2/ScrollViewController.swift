@@ -74,43 +74,37 @@ class ScrollViewController: UIViewController {
             make.top.leading.equalTo(contentView)
             make.trailing.equalTo(self.view.snp.centerX)
             make.height.equalTo(330)
+            make.width.equalTo(contentView).dividedBy(2)
         }
         
         orangeView.snp.makeConstraints { make in
             make.top.equalTo(contentView)
             make.leading.equalTo(redView.snp.trailing)
-            make.width.equalToSuperview()
-            make.height.equalTo(330)
+            make.height.width.equalTo(redView)
         }
         
         yellowView.snp.makeConstraints { make in
             make.top.equalTo(redView.snp.bottom)
-            make.leading.equalToSuperview()
-            make.trailing.equalTo(self.view.snp.centerX)
-            make.height.equalTo(330)
+            make.leading.equalTo(contentView)
+            make.height.width.equalTo(redView)
         }
         
         greenView.snp.makeConstraints { make in
             make.top.equalTo(orangeView.snp.bottom)
             make.leading.equalTo(yellowView.snp.trailing)
-            make.width.equalToSuperview()
-            make.height.equalTo(330)
+            make.height.width.equalTo(redView)
         }
         
         blueView.snp.makeConstraints { make in
             make.top.equalTo(yellowView.snp.bottom)
             make.leading.equalToSuperview()
-            make.trailing.equalTo(self.view.snp.centerX)
-            make.height.equalTo(330)
-            make.bottom.equalTo(contentView)
+            make.height.width.equalTo(redView)
         }
         
         purpleView.snp.makeConstraints { make in
             make.top.equalTo(greenView.snp.bottom)
             make.leading.equalTo(blueView.snp.trailing)
-            make.width.equalToSuperview()
-            make.height.equalTo(330)
-            make.bottom.equalTo(contentView)
+            make.height.width.equalTo(redView)
         }
 
     }
