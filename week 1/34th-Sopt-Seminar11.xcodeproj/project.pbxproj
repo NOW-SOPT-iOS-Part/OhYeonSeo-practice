@@ -21,6 +21,8 @@
 		DC7139022BB7D7BF0057896A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DC7139012BB7D7BF0057896A /* Base */; };
 		DC71390A2BB7E4AE0057896A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7139092BB7E4AE0057896A /* LoginViewController.swift */; };
 		DC71390C2BB7E8D50057896A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC71390B2BB7E8D50057896A /* WelcomeViewController.swift */; };
+		DC796AAF2BD393510062EC2B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC796AAE2BD393510062EC2B /* ChatViewController.swift */; };
+		DC796AB12BD393680062EC2B /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC796AB02BD393680062EC2B /* ChatTableViewCell.swift */; };
 		DC940B962BBAD242008E1B8E /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC940B952BBAD242008E1B8E /* Pretendard-SemiBold.otf */; };
 		DC940B992BBAD6A2008E1B8E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC940B982BBAD6A2008E1B8E /* UIColor+.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 		DC7139032BB7D7BF0057896A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC7139092BB7E4AE0057896A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC71390B2BB7E8D50057896A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		DC796AAE2BD393510062EC2B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		DC796AB02BD393680062EC2B /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		DC940B952BBAD242008E1B8E /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
 		DC940B982BBAD6A2008E1B8E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +96,7 @@
 				DC7138F72BB7D7BD0057896A /* SceneDelegate.swift */,
 				DC71390D2BB7E8F20057896A /* ViewController */,
 				DC6599CC2BC1148E005B6A93 /* W2 */,
+				DC796AAD2BD393270062EC2B /* W3 */,
 				DC940B942BBAD21C008E1B8E /* Font */,
 				DC940B972BBAD68D008E1B8E /* Extension */,
 				DC7138FB2BB7D7BE0057896A /* Main.storyboard */,
@@ -109,6 +114,15 @@
 				DC71390B2BB7E8D50057896A /* WelcomeViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DC796AAD2BD393270062EC2B /* W3 */ = {
+			isa = PBXGroup;
+			children = (
+				DC796AAE2BD393510062EC2B /* ChatViewController.swift */,
+				DC796AB02BD393680062EC2B /* ChatTableViewCell.swift */,
+			);
+			path = W3;
 			sourceTree = "<group>";
 		};
 		DC940B942BBAD21C008E1B8E /* Font */ = {
@@ -208,12 +222,14 @@
 			files = (
 				DC6599D22BC11B62005B6A93 /* LoginViewController_Closure.swift in Sources */,
 				DC71390A2BB7E4AE0057896A /* LoginViewController.swift in Sources */,
+				DC796AAF2BD393510062EC2B /* ChatViewController.swift in Sources */,
 				DC71390C2BB7E8D50057896A /* WelcomeViewController.swift in Sources */,
 				DC7138F62BB7D7BD0057896A /* AppDelegate.swift in Sources */,
 				DC7138F82BB7D7BD0057896A /* SceneDelegate.swift in Sources */,
 				DC940B992BBAD6A2008E1B8E /* UIColor+.swift in Sources */,
 				DC6599D02BC114D2005B6A93 /* LoginViewController_DelegatePattern.swift in Sources */,
 				DC6599DB2BC131C9005B6A93 /* ScrollViewController.swift in Sources */,
+				DC796AB12BD393680062EC2B /* ChatTableViewCell.swift in Sources */,
 				DC6599D42BC11B6F005B6A93 /* WelcomeViewController_Closure.swift in Sources */,
 				DC6599CE2BC114AD005B6A93 /* WelcomeViewController_DelegatePattern.swift in Sources */,
 			);
