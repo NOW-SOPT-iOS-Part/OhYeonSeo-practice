@@ -9,29 +9,34 @@ import UIKit
 
 final class ChatTableViewCell: UITableViewCell {
     
-    //
+    static let identifier = "ChatTableViewCell"
     
+    private let profileImageView: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(named: "profileImage")
+        return view
+    }()
     
-    private let profileImageView = UIImageView()
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.textAlignment = .center
-        label.font = UIFont(name: "Pretendard-Bold", size: 15)
+        label.font = UIFont(name: "Pretendard-SemiBold", size: 15)
         return label
     }()
+    
     private let placeLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor(red: 156, green: 156, blue: 156, alpha: 1)
+        label.textColor = .gray
         label.textAlignment = .left
-        label.font = UIFont(name: "Pretendard-Bold", size: 12)
+        label.font = UIFont(name: "Pretendard-SemiBold", size: 12)
         return label
     }()
     private let chatLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.textAlignment = .left
-        label.font = UIFont(name: "Pretendard-Bold", size: 14)
+        label.font = UIFont(name: "Pretendard-SemiBold", size: 14)
         return label
     }()
     
@@ -73,5 +78,15 @@ final class ChatTableViewCell: UITableViewCell {
             $0.trailing.bottom.equalToSuperview().inset(16)
             $0.size.equalTo(40)
         }
+    }
+}
+
+extension ChatTableViewCell {
+    func dataBind(_ chatData: ChatModel) {
+        profileImageView.image = chatData.profileImg
+        nameLabel.text = chatData.name
+        placeLabel.text = chatData.place
+        chatLabel.text = chatData.message
+        itemImageView.image = chatData.itemImg
     }
 }
