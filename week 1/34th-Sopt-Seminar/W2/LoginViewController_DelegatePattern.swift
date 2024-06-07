@@ -115,6 +115,3 @@ extension LoginViewController_DelegatePattern: DataBindProtocol {
     }
 }
 
-#Preview{
-    LoginViewController_DelegatePattern()
-}
